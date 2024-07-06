@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor de Moneda</h1>
+        <div class="converter">
+            <div class="input-section">
+                <label >Cantidad</label>
+                <input class="clp" type="number" id="cantidad" placeholder="Ingrese cantidad en clp">
+            </div>
+            <div class="input-section">
+                <select id="moneda">
+                    <option value="dolar">USD - Dólar estadounidense</option>
+                    <option value="euro">EUR - Euro</option>
+                    <option value="bitcoin">BT - Bitcoin</option>
+                    <option value="utm">UTM - Unidad tributaria mensual</option>
+                    <option value="uf">UF - Unidad de Fomento</option>
+                </select>
+            </div>
+            <button id="convertir">Convertir</button>
+            <div class="result" id="resultado"></div>
+            <canvas id="historial"></canvas>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
